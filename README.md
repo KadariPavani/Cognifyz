@@ -2,10 +2,10 @@
 
 ### web Development Internship
 
---Levels and Tasks
+#### --Levels and Tasks
 
 
-- Level 1
+##### - Level 1
   
   - Task 1 HTML/CSS:
       - Create a simple webpage with aheading, paragraph, and image usingHTML and CSS.
@@ -17,7 +17,7 @@
       - Create an alert box that displays a greeting message based on the current time using JavaScript.
       - Design and code a simple navigation menu with three links using HTML andCSS.
 
-- Level 2
+##### - Level 2
   
   - Task 1 Front-end Frameworks:
       - Use a front-end framework like Bulma or UIKit to create a responsive card component with an image and text.
@@ -27,7 +27,7 @@
       - Convert a basic webpage into a responsive design that adapts to different screen sizes using CSS media queries.
       - Create a mobile-friendly navigation menu that collapses into a hamburger menu on smaller screens using HTML and CSS.
 
-- Level 3
+##### - Level 3
   
   - Task 1 Image Manipulation::
       - Use CSS to create a basic image gallery with thumbnail images that enlarge when clicked.
@@ -43,17 +43,22 @@ with the following key elements:
       - Contact information: Footer with relevant contact details for inquiries.
 
 
-- LEVEL-1
+##### - LEVEL-1
   
-  1. - [x] Task1   [Solution]()
-  2. - [x] Task2   [Solution]()
+  1. - [x] Task1   [Solution](https://github.com/KadariPavani/Cognifyz/tree/main/Level1Task1)
+  2. - [x] Task2   [Solution](https://github.com/KadariPavani/Cognifyz/tree/main/Level1Task2)
            
-- LEVEL-2
+##### - LEVEL-2
   
-  1. - [x] Task1   [Solution]()
-  2. - [x] Task2   [Solution]()
+  1. - [x] Task1   [Solution](https://github.com/KadariPavani/Cognifyz/tree/main/Level2Task1)
+  2. - [x] Task2   [Solution](https://github.com/KadariPavani/Cognifyz/tree/main/Level2Task2)
 
-- LEVEL-3
+##### - LEVEL-3
   
   1. - [ ] Task1
   2. - [ ] Task2
+    
+  ### Contact
+
+  * Email : kadaripavani1@gmail.com
+  * Github : @KadariPavani
