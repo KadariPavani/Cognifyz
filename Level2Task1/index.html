@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Components Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .card-content {
+            background-color: #f8f9fa;
+        }
+        .title, .subtitle {
+            color: #2a2a2a;
+        }
+        .grid-item {
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #333;
+            color: white;
+        }
+        .content-section {
+            margin: 30px 0;
+        }
+        .content-section p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+            <img src="IMAGES/logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <h4>Level2 Task1</h4>
+        </div>
+    </div>
+</nav>
+
+<!-- Bulma Card Components -->
+<section class="section">
+    <div class="container">
+        <h1 class="title">Bulma Card Components</h1>
+        <div class="columns is-multiline">
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="IMAGES/summer.png" alt="Summer Season">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Summer Season</p>
+                                <p class="subtitle is-6">@summer</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Bask in the warmth and sunshine of the summer season. Perfect for beach trips, barbecues, and outdoor fun, summer is the time to enjoy the great outdoors and create lasting memories.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="IMAGES/rainy.png" alt="Rainy Season">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Rainy Season</p>
+                                <p class="subtitle is-6">@rainy</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Embrace the cool and refreshing rains of the rainy season. With lush landscapes and the soothing sound of rain, it's the perfect time for cozy indoor activities and reflection.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="IMAGES/winter.png" alt="Winter Season">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Winter Season</p>
+                                <p class="subtitle is-6">@winter</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Experience the magic and beauty of winter. From snow-covered landscapes to festive celebrations, winter brings a cozy charm and a time to enjoy the warmth of home.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Bootstrap Grid Layout -->
+<div class="container mt-5">
+    <h1 class="display-4 text-center">Bootstrap Grid Layout</h1>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="grid-item grid-item-1">
+                <img src="IMAGES/indian.png" alt="Indian Ocean">
+                <h5>Indian Ocean</h5>
+                <p>The Indian Ocean, bordered by vibrant coastal cultures, is known for its warm waters and rich marine biodiversity. Discover the beauty of its tropical islands and colorful coral reefs.</p>
+                <button class="btn btn-primary btn-custom" onclick="alert('Indian Ocean Button Clicked!')">Click Me</button>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="grid-item grid-item-2">
+                <img src="IMAGES/pacific.png" alt="Pacific Ocean">
+                <h5>Pacific Ocean</h5>
+                <p>The Pacific Ocean, the largest and deepest ocean, is a vast expanse that holds countless wonders, from its stunning coral reefs to its diverse marine life.</p>
+                <button class="btn btn-primary btn-custom" onclick="alert('Pacific Ocean Button Clicked!')">Click Me</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="grid-item grid-item-3">
+                <img src="IMAGES/atlantic.png" alt="Atlantic Ocean">
+                <h5>Atlantic Ocean</h5>
+                <p>The Atlantic Ocean, with its rich history and cultural significance, connects the Americas to Europe and Africa. It's a realm of adventure and exploration.</p>
+                <button class="btn btn-primary btn-custom" onclick="alert('Atlantic Ocean Button Clicked!')">Click Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12 col-md-6">
+            <div class="grid-item grid-item-4">
+                <img src="IMAGES/archetic.png" alt="Arctic Ocean">
+                <h5>Arctic Ocean</h5>
+                <p>The Arctic Ocean, characterized by its icy landscapes and unique wildlife, offers a glimpse into one of the most remote and beautiful regions on Earth.</p>
+                <button class="btn btn-primary btn-custom" onclick="alert('Arctic Ocean Button Clicked!')">Click Me</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="grid-item grid-item-5">
+                <img src="IMAGES/antarchetic.png" alt="Antarctic Ocean">
+                <h5>Antarctic Ocean</h5>
+                <p>Surrounding the icy continent of Antarctica, the Antarctic Ocean is a place of stunning natural beauty and home to a variety of unique marine species.</p>
+                <button class="btn btn-primary btn-custom" onclick="alert('Antarctic Ocean Button Clicked!')">Click Me</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
