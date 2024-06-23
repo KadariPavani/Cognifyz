@@ -2,7 +2,7 @@
 
 ### web Development Internship
 
-#### --Levels and Tasks
+#### Levels and Tasks
 
 
 ##### - Level 1
