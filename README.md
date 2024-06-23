@@ -11,6 +11,12 @@
       - Create a simple webpage with aheading, paragraph, and image usingHTML and CSS.
       - Build a basic form with a single input field and a submit button using HTML and CSS.
       - Design and code a simple navigation menu with three links using HTML andCSS.
+        
+  - Task 1 JavaScript:
+      - Develop a basic button that changes its color when clicked using JavaScript.
+      - Create an alert box that displays a greeting message based on the current time using JavaScript.
+      - Design and code a simple navigation menu with three links using HTML andCSS.
+
 
 
 - LEVEL-1
