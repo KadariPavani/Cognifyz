@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="intro">
+        <nav>
+            <a href="index.html"><img src="IMAGES/logo.png" width="150" height="50" align="center"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">GALLERY</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> NATURE'S BEAUTY</h1>
+            <p>Discover the wonders of the natural world and immerse yourself in its serenity.</p>
+        </div>
+    </section>
+
+    <!-- Nature Gallery -->
+    <section class="nature-gallery">
+        <h1>NATURE'S WONDERS</h1>
+        <p>Experience the marvels of nature with breathtaking landscapes and diverse ecosystems.</p>
+        <div class="row">
+            <div class="course-col">
+                <h2>Forests</h2>
+                <p>Explore dense forests teeming with life and witness the harmony of flora and fauna. Feel the cool
+                    breeze under the canopy of towering trees and listen to the symphony of birds chirping.</p>
+                <a href="/IMAGES/forest.png" class="download-btn">Download Forest Wallpaper</a><br>
+                <img src="/IMAGES/forest.png" alt="Forest Image">
+            </div>
+            <div class="course-col">
+                <h2>Mountains</h2>
+                <p>Marvel at the majestic peaks and valleys, and breathe in the crisp mountain air. Let the rugged
+                    beauty of the mountains inspire you to embark on new adventures and conquer new heights.</p>
+                <a href="/IMAGES/mountain.png" class="download-btn">Download Mountain Wallpaper</a><br>
+                <img src="/IMAGES/mountain.png" alt="Mountain Image">
+            </div>
+            <div class="course-col">
+                <h2>Waterfalls</h2>
+                <p>Be captivated by the cascading waters and the soothing sound of waterfalls. Let the mesmerizing
+                    beauty of waterfalls transport you to a state of tranquility and awe.</p>
+                <a href="/IMAGES/Naturebg.png" class="download-btn">Download Waterfall Wallpaper</a><br>
+                <img src="/IMAGES/Naturebg.png" alt="Waterfall Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Flora and Fauna -->
+    <section class="flora-fauna">
+        <h2>FLORA AND FAUNA</h2>
+        <p>Explore the rich biodiversity of flora and fauna in their natural habitats. From vibrant flowers to exotic
+            animals, every species plays a vital role in maintaining the ecological balance of our planet.</p>
+    </section>
+
+    <!-- Sunsets and Sunrises -->
+    <section class="sunsets-sunrises">
+        <h3>SUNSETS AND SUNRISES</h3>
+        <p>Witness the magical transformation of the sky as the sun sets or rises, painting the horizon with hues of
+            orange, pink, and purple. Let the beauty of these celestial events fill you with awe and wonder.</p>
+    </section>
+
+    <!-- Seasons -->
+    <section class="seasons">
+        <div class="seasons-col">
+            <img src="/IMAGES/seasons.png" alt="Seasons Image">
+            <div>
+                <h2>SEASONS</h2>
+                <p>Experience the beauty of all four seasons, from the vibrant colors of spring to the snowy landscapes
+                    of winter. Each season brings its own charm and magic, making nature's cycle a wonder to behold.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Underwater World -->
+    <section class="underwater-world">
+        <h2>UNDERWATER WORLD</h2>
+        <p>Explore the mysterious depths of the ocean and discover the hidden wonders of the underwater world. From
+            colorful coral reefs to majestic marine life, the ocean holds endless secrets waiting to be explored.</p>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="/IMAGES/uw1.png" alt="Underwater Image 1">
+                    <p>Colorful Coral Reef</p>
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/uw2.png" alt="Underwater Image 2">
+                    <p>Majestic Marine Life</p>
+                </div>
+                <div class="slide">
+                    <img src="/IMAGES/uw3.png" alt="Underwater Image 3">
+                    <p>Mysterious Ocean Depths</p>
+                </div>
+            </div>
+            <button class="arrow left-arrow" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>WebPage</h2>
+                <p>This WebPage consists of Beauty of the nature.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#nature-gallery">Gallery</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: kadaripavani1@beautynature.com</p>
+                <p>Phone: +111222333</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Nature's Beauty. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        let slideIndex = 0;
+
+        function showSlides(n) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            if (n > slides.length - 1) slideIndex = 0;
+            if (n < 0) slideIndex = slides.length - 1;
+
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+            });
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex].classList.add('active');
+        }
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlides(slideIndex);
+        });
+    </script>
+</body>

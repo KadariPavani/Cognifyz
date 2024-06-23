@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 10)), url("/IMAGES/imagebg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    height: 75px;
+    position: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.56s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 40px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: darkgray;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 2px solid #ffffff;
+    background: #808080;
+    transition: 2s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: #808080;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.nav-links ul {
+    padding: 30px;
+}
+
+/* Nature Gallery */
+.nature-gallery {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.nature-gallery h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.nature-gallery p {
+    color: #6B8E23;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:25px;
+    margin: 5% auto;
+}
+
+.course-col {
+    flex: 1;
+    min-width: 100px;
+    min-height: min-content;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-col h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.course-col p {
+    flex-grow: 1;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.course-col img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.course-col .download-btn {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.course-col .download-btn:hover {
+    background-color: #556B2F;
+}
+
+.course-col:hover {
+   
+    box-shadow: 0 20px 20px rgba(0.5, 0.5, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-col {
+        margin-bottom: 20px;
+    }
+}
+
+/* Flora and Fauna */
+.flora-fauna {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flora-fauna h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.flora-fauna p {
+    font-size: 18px;
+    color: #6B8E23;
+}
+
+/* Sunsets and Sunrises */
+.sunsets-sunrises {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(99, 129, 99, 0.7)), url("IMAGES/ff.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.sunsets-sunrises h3 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* Seasons */
+.seasons {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.seasons-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.seasons-col img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.seasons-col div {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.seasons h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.seasons p {
+    font-size: 16px;
+    color: #6B8E23;
+    text-align: justify;
+}
+
+.seasons-col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .seasons-col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seasons-col img {
+        margin-bottom: 20px;
+    }
+
+    .seasons-col div {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+/* Underwater World */
+.underwater-world {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.underwater-world h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.underwater-world p {
+    font-size: 18px;
+    color: #6B8E23;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6B8E23;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slide p {
+        font-size: 14px;
+    }
+
+    .arrow {
+        padding: 5px;
+    }
+}
+
+/* Footer */
+.footer {
+    background: #fff3f3;
+    color: #12a1d4;
+    padding: 60px 0 30px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 14px;
+    color: #161515;
+    line-height: 1.5;
+}
+
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .social a {
+    margin-right: 20px;
+    color: #030303;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #161515;
+}
+
+.footer-bottom a {
+    color: #12a1d4;
+    text-decoration: none;
+}
