@@ -1,0 +1,112 @@
+<!----------------------------------------------------------------------LEVEL-1 TASK-1----------------------------------------------------------------------->
+
+
+<!---TASKS:-
+
+
+Create a simple webpage with a heading, paragraph, and image using HTML and CSS.
+
+Build a basic form with a single input field and a submit button using HTML and CSS.
+
+Design and code a simple navigation menu with three links using HTML and CSS.
+
+
+---->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Web Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <p>Cognifyz</p>
+    </div>
+    <ul>
+      <li><a href="https://cognifyz.com/">Home</a></li>
+      <li><a href="#about-us">About</a></li>
+      <li><a href="#contact-us">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content-items">
+    <img src="imagebg.png" alt="bgimg">
+  </div>
+  <div class="text">
+    Cognifyz Technologies
+
+  </div>
+  <div class="icons">
+    <a href="https://www.facebook.com/pages/Cognifyz%20Technologies/124778840719089/" target="_blank"><i
+        class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/cognifyz_tech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/cognifyz-techonologies/mycompany/" target="_blank"><i
+        class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+
+
+  <section id="about-us">
+    <h2>About Us</h2>
+    <br>
+    <p>Cognifyz Technologies is a leading technology company that
+      specializes in the dynamic field of data science and excels in
+      delivering impactful projects and solutions.
+      The company offers a wide range of products and services,
+      including artificial intelligence (AI), machine learning (ML), and
+      data analytics tools.
+      Cognifyz Technologies also provides training programs to
+      enhance skills and knowledge in these areas.
+      The company focuses on delivering innovative and cutting-edge
+      solutions to meet the evolving needs of businesses..</p>
+    <div class="about-us-container">
+      <div class="about-us-item">
+        <img src="image.png" alt="Team Member 1">
+        <p>Cognifyz Technologies provides advanced AI, ML, and data analytics solutions, along with web services and app
+          development, empowering your business for success</p>
+  </section>
+  <section id="contact-us">
+    <br>
+    <h2>
+      <center>Contact us</center>
+    </h2>
+    <br>
+    <div class="row">
+
+      <div class="contact-col">
+        <form action="thank.html" method="POST">
+          <!-- Your form fields go here -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit"><a href="thank.html">submit</a></button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <br>
+    <br>
+
+    <p>Cognifyz Technologies</p>
+    <br>
+    <br>
+
+  </section>
+</body>
+
+
+
+</html>
